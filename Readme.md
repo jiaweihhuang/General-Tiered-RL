@@ -1,4 +1,4 @@
-# Experiments for Tiered RL Setting in Tabular Examples
+# Experiments for General Tiered RL Setting in Tabular Examples
 Code for General Tiered RL paper https://arxiv.org/abs/2302.05534. If you find it helpful, please cite as follow:
 
 ```
