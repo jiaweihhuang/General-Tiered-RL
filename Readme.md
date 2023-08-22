@@ -14,6 +14,7 @@ Code for General Tiered RL paper https://arxiv.org/abs/2302.05534. If you find i
 
 
 ### Run experiments with different number of source tasks:
+```python
 python3 Algorithm.py -W 1 --model-seed 1000 --delay-transfer 500000 --lam 0.3 --seed 100 200 300 400 500 ...
 
 python3 Algorithm.py -W 2 --model-seed 1000 --delay-transfer 500000 --lam 0.3 --seed 100 200 300 400 500 ...
@@ -21,7 +22,11 @@ python3 Algorithm.py -W 2 --model-seed 1000 --delay-transfer 500000 --lam 0.3 --
 python3 Algorithm.py -W 3 --model-seed 1000 --delay-transfer 500000 --lam 0.3 --seed 100 200 300 400 500 ...
 
 python3 Algorithm.py -W 5 --model-seed 1000 --delay-transfer 500000 --lam 0.3 --seed 100 200 300 400 500 ...
+```
 
 
 ### Plot results
+
+```python
 python3 draw.py --log-dir [Your Exp. Log Dirs] -W 0 1 2 5
+```
