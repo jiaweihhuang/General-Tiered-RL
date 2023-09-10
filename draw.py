@@ -83,9 +83,8 @@ def main():
         avg_R_algE = np.mean(all_R_algE, axis=0)
         std_R_algE = np.std(all_R_algE, axis=0) / np.sqrt(len(iters_list) - 1)
 
-        scale = 1.0
         plt.plot(avg_iters, avg_R_algE, label='W = {}'.format(W))
-        plt.fill_between(avg_iters, avg_R_algE - scale * std_R_algE, avg_R_algE + scale * std_R_algE, alpha=0.1)
+        plt.fill_between(avg_iters, avg_R_algE - 2 * std_R_algE, avg_R_algE + 2 * std_R_algE, alpha=0.1)
 
     plt.plot([5e5, 5e5], [min_val, max_val], color='purple', linestyle='--')
 
